@@ -1,0 +1,134 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text=="" || textBox2.Text=="")
+            {
+                MessageBox.Show("Please Enter both Numbers ");
+            }
+
+            else
+            {
+                int num1 = Int32.Parse(textBox1.Text);
+                int num2 = Int32.Parse(textBox2.Text);
+                int sum = num1 + num2;
+                //   MessageBox.Show(sum.ToString());
+                //  label4.Text = sum.ToString();
+                textBox3.Text = sum.ToString();
+            }
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("Please Enter both Numbers ");
+            }
+
+            else
+            {
+                int num1 = Int32.Parse(textBox1.Text);
+                int num2 = Int32.Parse(textBox2.Text);
+                int sub = num1 - num2;
+                //   MessageBox.Show(sum.ToString());
+                //  label4.Text = sum.ToString();
+                textBox3.Text = sub.ToString();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("Please Enter both Numbers ");
+            }
+
+            else
+            {
+                int num1 = Int32.Parse(textBox1.Text);
+                int num2 = Int32.Parse(textBox2.Text);
+                int mul = num1 * num2;
+                //   MessageBox.Show(sum.ToString());
+                //  label4.Text = sum.ToString();
+                textBox3.Text = mul.ToString();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("Please Enter both Numbers ");
+            }
+
+            else
+            {
+                int num1 = Int32.Parse(textBox1.Text);
+                int num2 = Int32.Parse(textBox2.Text);
+                if (textBox2.Text == "")
+                {
+                    MessageBox.Show("Division by zero is not possible ");
+                  }
+                else {
+                    int div = num1 / num2;
+
+                    //   MessageBox.Show(sum.ToString());
+                    //  label4.Text = sum.ToString();
+                    textBox3.Text = div.ToString();
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Please Enter both Numbers ");
+            }
+
+            else
+            {
+                int num1 = Int32.Parse(textBox1.Text);
+                int square = num1 * num1;
+                //   MessageBox.Show(sum.ToString());
+                //  label4.Text = sum.ToString();
+                textBox3.Text = square.ToString();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Please Enter both Numbers ");
+            }
+
+            else
+            {
+                int num1 = Int32.Parse(textBox1.Text);
+                int square = num1 * num1 * num1;
+                //   MessageBox.Show(sum.ToString());
+                //  label4.Text = sum.ToString();
+                textBox3.Text = square.ToString();
+            }
+        }
+    }
+}
